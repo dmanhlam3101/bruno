@@ -1,0 +1,7 @@
+info:
+  name: yc19
+  type: folder
+  seq: 1
+
+request:
+  auth: inherit
