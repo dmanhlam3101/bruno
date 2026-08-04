@@ -1,7 +1,7 @@
 opencollection: 1.0.0
 
 info:
-  name: PFMIS
+  name: X1
 config:
   proxy:
     inherit: true
