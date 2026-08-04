@@ -1,0 +1,48 @@
+info:
+  name: C.02.2b
+  type: http
+  seq: 4
+
+http:
+  method: post
+  url: http://localhost:6500/v1/report/api/PIMTT442026TTBTC/PBC022B
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwZm1pc3YzIiwic3ViIjoiMjEzIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiYWRtaW4iLCJleHAiOjE3ODUzNDc4MDAsImlhdCI6MTc4NTMxOTAwMCwianRpIjoiZDEzOTE0YzItM2RhNi00OGZiLWE3NTgtYWM4ODQ0ZjhiOWQ0In0.jBM9ZR2CBWZIIYlWpcxf_P67d4QTiDcgdKIh2odHJWE
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "filter": {
+          "PeriodType": 1,
+          "ParaValueName": "Năm 2026",
+          "FromDate": "01/01/2026",
+          "ToDate": "31/12/2026",
+          "CompanyID": null,
+          "CompanyNo": "",
+          "CompanyName": "",
+          "ProjectID": 48,
+          "ProjectNo": "0000006008",
+          "ProjectName": "hoa test",
+          "UomID": null,
+          "UomNo": "",
+          "UomName": "Đồng",
+          "FeaturesShow": {},
+          "FeaturesOrder": {},
+          "FeaturesLevel": {},
+          "ReportID": 1361452,
+          "ProgramID": 40,
+          "WorkDate": "29/07/2026"
+        }
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwZm1pc3YzIiwic3ViIjoiMjEzIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiYWRtaW4iLCJleHAiOjE3ODU3Nzc4NDgsImlhdCI6MTc4NTc0OTA0OCwianRpIjoiMzE2NWYxMGMtZjk3ZC00ZjU3LWFhNGYtOTU4YTU0Y2VlZWI3In0.ON-ZT7J9loezA45-UnBeAi5X8GKYtrxL8JbBq87UNKY
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

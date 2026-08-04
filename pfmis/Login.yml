@@ -1,0 +1,29 @@
+info:
+  name: Login
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:6100/v1/sysadmin/api/login
+  headers:
+    - name: accept
+      value: "*/*"
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: "{\r
+
+      \  \"username\": \"admin\",\r
+
+      \  \"password\": \"admin@123456\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
